@@ -11,7 +11,7 @@ int main()
     cout<<"Enter How many integers do you want to work with?"<<endl;
     cin>>n1;
 
-    cout<<"Enter How much some do you want?"<<endl;
+    cout<<"Enter How much sum do you want?"<<endl;
     cin>>n2;
 
     for(i=1; i<=n1; i++)
