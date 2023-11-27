@@ -147,6 +147,42 @@ float substrc()
      return n3;
     cout<<endl;
  }
+
+ void square_root()
+ {
+     double n;
+     double root;
+     cout<<"Enter a positive number: "<<endl;
+     cin>>n;
+     root = sqrt(n);
+
+     if(n<0)
+     {
+         cout<<"Cannot calculate of square root of a negative number"<<endl;
+     }
+     else
+     {
+         cout<<"The root of "<<n<<" is "<<root<<endl;
+     }
+ }
+
+ void power()
+ {
+     double base, exponent;
+
+     cout<<"Enter base: "<<endl;
+     cin>>base;
+
+     cout<<"Enter exponent: "<<endl;
+     cin>>exponent;
+
+     double result = pow(base, exponent);
+
+cout<<base<<" raised to the power of "<<exponent<<" is "<<result<<endl;
+
+ }
+
+
 int main()
 {
     int option, n;
@@ -154,16 +190,18 @@ int main()
     cout<<"You can addition, subtraction, multiplication, division and remainder  by this calculator"<<endl;
 
 do
-{
+{   cout<<endl<<endl;
     cout<<"Which operation do you want to perform"<<endl;
     cout<<"Select from option number"<<endl;
     cout<<"Enter 0 to exit"<<endl;
     cout<<"Enter 1 for addition"<<endl;
-    cout<<"Enter 2 for substriplication"<<endl;
+    cout<<"Enter 2 for subtraction"<<endl;
     cout<<"Enter 3 for multiplication"<<endl;
     cout<<"Enter 4 for division"<<endl;
     cout<<"Enter 5 for remainder"<<endl;
-    cout<<"Enter 6 for clear screen"<<endl;
+    cout<<"Enter 6 for Square root"<<endl;
+    cout<<"Enter 7 for calculate of power of number"<<endl;
+    cout<<"Enter 8 for clear screen"<<endl;
 
     cin>>option;
 
@@ -175,7 +213,7 @@ do
         cout<<endl<<"The addition these value is : "<<add()<<endl;
         break;
     case 2:
-        cout<<endl<<"The substriplication of these value is : "<<substrc()<<endl;
+        cout<<endl<<"The subtraction of these value is : "<<substrc()<<endl;
         break;
     case 3:
         cout<<endl<<"The multiplication of these value is: "<<multiplication()<<endl;
@@ -187,6 +225,12 @@ do
         cout<<endl<<"The reminder if these value is: "<<remaind()<<endl;
         break;
     case 6:
+        square_root();
+        break;
+    case 7:
+        power() ;
+        break;
+    case 8:
         system("cls");
         break;
     default:
@@ -201,4 +245,3 @@ do
     while(option!=0);
     return 0;
 }
-
