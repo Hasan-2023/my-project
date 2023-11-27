@@ -3,7 +3,7 @@ using namespace std;
 
 void showMenu()
 {
-    cout<<endl<<endl<<endl<<"**********MENU**********"<<endl;
+    cout<<endl<<"**********MENU**********"<<endl;
     cout<<"1.Check balance"<<endl;
     cout<<"2.Deposit"<<endl;
     cout<<"3.Withdraw"<<endl;
